@@ -1,19 +1,83 @@
-# Hugo Example
+Herring Cove
+============
 
-This directory is a brief example of a [Hugo](https://gohugo.io/) app that can be deployed to Vercel with zero configuration.
+### NOTE: This theme is no longer maintained.
 
-## Deploy Your Own
+***
 
-Deploy your own Hugo project with Vercel.
+Herring Cove is a clean and responsive [Hugo](//gohugo.io) theme based on the [Jekyll](http://jekyllrb.com) theme of the same name.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/hugo&template=hugo)
 
-_Live Example: https://hugo-template.vercel.app_
+### Overview
 
-### How We Created This Example
+* Fixed Sidebar with social links
+* Minimal design 
+* Comments by Disqus
+* Social Sharing abilities 
+* Easy to configure
+* Based on Bootstrap
 
-To get started with Hugo for deployment with Vercel, you can use the [Hugo CLI](https://gohugo.io/commands/) to initialize the project:
+### Screenshots
 
-```shell
-$ hugo new site project-name
+![screenshot](https://github.com/spf13/herring-cove/blob/master/images/screenshot1.png)
+![screenshot](https://github.com/spf13/herring-cove/blob/master/images/screenshot2.png)
+![screenshot](https://github.com/spf13/herring-cove/blob/master/images/screenshot-landing.png)
+
+### Setup
+
+1. Install Hugo
+2. Fork or [download](//github.com/spf13/herring-cove/archive/master.zip) this theme repo
+3. Edit the config file in the root directory of your site
+
+### Download
+
+[download](//github.com/spf13/herring-cove/archive/master.zip)
+
+### License
+* [MIT](//opensource.org/licenses/MIT)
+
+## Author
+**Ravi Patel**
+- <https://github.com/arnp>
+
+## Ported By
+**Steve Francia**
+- <https://github.com/spf13>
+
+-------------
+Herring Cove is always a work in progress and as such, I hope to clean up the code and add features as time permits. Feel free to add your own additions. 
+
+*What's with the name?*
+
+[Herring Cove](//www.capecodbeachchair.com/beachguide/index.cfm?page=3&BeachID=5) is a beach on Cape Cod in Provincetown, Massachusetts. If you're in the area, be sure to check it out!
+
+## Additional features by
+**Maikel Bollemeijer**
+- <https://github.com/mbollemeijer>
+
+-------------
+
+1. Profile picture parameter
+2. Links in the menus are generated through params in the config
+3. Landingpage
+
+Below an example of the yaml config
+```yaml
+params:
+  ProfilePicture: "pathOrUrlToImage"
+  links:
+    Home : "/"
+    Blog: "/blog/"
+    About: "/about/"
+```
+
+## Landing page
+If you want to enable the landing page make sure you have the following params in your config.
+
+```yaml
+params:
+  ProfilePicture: "pathToImageOrUrlToImage"
+  enableLandingPage: true
+  landingPageRedirectUrl: "/about/"
+  AuthorName: "John Doe"
 ```
